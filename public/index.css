@@ -1,0 +1,419 @@
+body {
+    background-color: rgba(40, 37, 38);
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.first-page {
+    background: linear-gradient(119.48deg, #151316 5.67%, #62251F 82.84%) fixed center center/cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.second-page {
+    margin: 0px 40px;
+}
+
+.third-page {
+    margin: 0px 60px;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    column-gap: 8rem;
+    align-items: center;
+    font-size: 1.18rem;
+    font-family: 'Inter', sans-serif;
+    margin-top: 0px;
+    padding: 15px 15px;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 5px;
+}
+
+.right {
+    margin: 50px 0px;
+}
+
+.navbar-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.blog {
+    width: 130px;
+    height: 40px;
+    background: linear-gradient(270deg, #FE9F0E 5.94%, #FD4E11 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: relative;
+    right: 25px;
+}
+
+.blog:hover {
+    box-shadow: 2px 2px 5px#FD4E11;
+    width: 132px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 1.32rem;
+}
+
+.container {
+    margin: -25px 40px;
+}
+
+.container h1 {
+    font-size: 48px;
+    font-family: 'Allerta', sans-serif;
+    font-weight: 300;
+}
+
+.container h2 {
+    font-size: 36px;
+    font-family: 'Allerta', sans-serif;
+    font-weight: 300;
+    margin-top: -30px;
+}
+
+.container h2 span {
+    background: -webkit-linear-gradient(rgba(254, 159, 14, 1), rgba(253, 78, 17, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box-1 {
+    display: flex;
+    height: 40rem;
+    margin: -35px 0px;
+}
+
+.left {
+    width: 70%;
+}
+
+
+.img1 {
+    width: 400px;
+    position: relative;
+    left: 50px;
+
+}
+
+.img2 {
+    position: relative;
+    left: 54%;
+    bottom: 6em;
+    width: 20rem;
+    height: 25rem;
+    bottom: 12em;
+
+}
+
+.img3 {
+    position: relative;
+    bottom: 22rem;
+    width: 23rem;
+    left: 48.5rem;
+}
+
+.left img {
+    width: 360px;
+    position: relative;
+    bottom: 20px;
+}
+
+.first-box {
+    width: 230px;
+    height: 230px;
+    background: radial-gradient(#f7f7f7, #ffc772);
+    color: black;
+    padding: 10px 15px 20px 15px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    bottom: 333px;
+    left: 320px;
+}
+
+.first-box a {
+    color: black;
+    font-weight: 600;
+}
+
+.first-box h4 img {
+    width: 15px;
+    padding: 0px 3px;
+    border-radius: 3px;
+    margin-right: 10px;
+    background: linear-gradient(#fdf511 1.11%, #FE9F0E 94%);
+    position: relative;
+    top: 5px;
+}
+
+.headcard {
+    display: flex;
+}
+
+.first-box h4 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.box-2 {
+    height: 30rem;
+}
+
+.second-box {
+    width: 200px;
+    height: 220px;
+    background: radial-gradient(#f7f7f7, #ffc772);
+    color: black;
+    padding: 10px 15px 20px 15px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    margin-top: 100px;
+    left: 30px;
+    bottom: -11px;
+}
+
+.second-box a {
+    color: black;
+    font-weight: 600;
+}
+
+.second-box h4 img {
+    width: 15px;
+    padding: 0px 3px;
+    border-radius: 3px;
+    margin-right: 10px;
+    background: linear-gradient(#fdf511 1.11%, #FE9F0E 94%);
+    position: relative;
+    top: 5px;
+}
+
+.second-box h4 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.box-2 h2 {
+    font-size: 30px;
+    margin-top: -60px;
+}
+
+.img4 {
+    width: 360px;
+    position: relative;
+    bottom: 300px;
+    left: 210px;
+}
+
+.currents {
+    width: 50%;
+    font-size: 24px;
+    position: relative;
+    bottom: 40rem;
+    left: 40rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.currents span {
+    background: -webkit-linear-gradient(rgba(254, 159, 14, 1), rgba(253, 78, 17, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.currents a {
+    text-decoration: none;
+}
+
+.news {
+    color: black;
+    width: 92%;
+    margin: auto;
+    background: radial-gradient(#f7f7f7, #ffc772);
+    height: 640px;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
+    padding: 0px 40px;
+}
+
+.news h1 {
+    font-size: 64px;
+}
+
+.news h1 img {
+    width: 300px;
+    position: relative;
+    float: right;
+    right: 80px;
+    bottom: 80px;
+}
+
+.news-1 {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+
+.right-1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.left-1 img {
+    width: 20rem;
+}
+
+.news-2 {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 30px;
+}
+
+.right-2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.left-2 img {
+    width: 20rem;
+}
+
+.third-page h1 {
+    font-size: 48px;
+}
+
+.cards {
+    display: flex;
+    column-gap: 100px;
+    margin: 40px 0px;
+
+}
+
+.card {
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    border-radius: 9px;
+    padding: 20px;
+    font-size: 24px;
+    width: 30%;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px white;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.card h2 {
+
+    display: inline-block;
+    font-size: 32px;
+}
+
+.card img {
+    width: 80px;
+    margin-left: 18%;
+    position: relative;
+    top: 15px;
+}
+
+.card a {
+    color: #E95102;
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    margin: 0px 30px;
+}
+
+.footer-box {
+    display: flex;
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-us {
+    display: flex;
+    border-right: 2px white solid;
+    width: 33%;
+    padding: 50px;
+
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.footer-logo img {
+    width: 180px;
+    position: relative;
+    right: 60px;
+    margin: 10px 0px;
+}
+
+.contact-us-desc {
+    margin-left: 25px;
+}
+
+.contact-us-desc h2 {
+    font-size: 26px;
+}
+
+.contact-us-desc span {
+    font-size: 20px;
+}
+
+.connect {
+    border-right: 2px white solid;
+    width: 33%;
+    padding: 50px;
+}
+
+.connect img {
+    width: 25px;
+    margin: 0px 5px;
+}
+
+
+.quick-links {
+    width: 33%;
+    padding: 50px;
+}
+
+.quick-links a {
+    margin-right: 80px;
+    color: #068AD0;
+    text-decoration: none;
+}
+
+.quick-links span a {
+    margin-right: 0px;
+    color: #EE3A24;
+}
+
+.return-to-top a {
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+}
