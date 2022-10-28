@@ -1,4 +1,8 @@
-import React, { Component } from 'react';
+import React, { useState,useEffect } from 'react';
+import { dataRef } from "../Data_controller/firebase";
+// import {  CircularProgress } from '@mui/material';
+// import { Audio } from 'react-loader-spinner'
+import ClockLoader from "react-spinners/ClockLoader";
 
 import i24 from '../../images/image 24.png';
 import G23 from '../../images/Group 23.png';
@@ -13,12 +17,46 @@ const cutStyle={
     height : '100px'
 }
 
-class Blog extends Component {
+const override: React.CSSProperties = {
+  display: "block",
+  margin: "auto",
+  borderColor: "red",
+};
 
+ function Blog(){
+
+
+  const [allData, setAllData] = useState([]);
+  useEffect(() => {
+    dataRef.ref().child('data').once('value', data => {
+      const getData = Object.values(data.val());
+      // console.log(getData);
+      setAllData(getData);
+      
+    })
+  }, []);
+
+  const i=allData.length - 1;
+  if(allData.length){
+    console.log(allData);
+  }
+  else{
    
+    console.log("loading");
+  }
 
-    render() {
-        return (<div>
+        
+// console.log(allData);
+
+        return (
+          !allData.length?<div className='loader'>
+            <ClockLoader 
+          color="#ffffff" 
+            size={100}
+            cssOverride={override}
+          />
+          </div>:
+        (<div>
       <h1>Stay Informed with informative blogs curated by SAE IIT BHU</h1>
       <div className="latest-blog">
         <div className="latest-blog-head">
@@ -26,12 +64,13 @@ class Blog extends Component {
           <img src={i24} />
         </div>
         <div className="latest-blog-body">
-          <p><span className="topics">Topics : EVs , IC engines</span><span className="date">Date : 27/12/2022</span></p>
-        <h2>Bookings for the New Maruti Grand Vitara variant bear out consumer </h2>
-        <img src={i25} />
-        <div className="blog-desc">In the Indian SUV market, which clocked around 1.2 million units in FY22, the midsize SUV holds a special place. It has a share of 18% and growing ..
-          In the Indian SUV market, which clocked around 1.2 million units in FY22, the midsize SUV holds a special place. It has a share of 18% and growing ..
-          In the Indian SUV market, which clocked around 1.2 million units in FY22, the midsize SUV holds a special place. It has a share of 18% and growing ..In the Indian SUV market, which clocked around 1.2 million units in FY22, the midsize SUV holds a special place. It has a share of 18% and growing ..</div>
+          <p>
+            <span className="topics">Topics : {allData[i]?.topic}</span>
+          <span className="date">Date : {allData[i]?.date}</span>
+          </p>
+        <h2>{allData[i]?.head}</h2>
+        <img src={allData[i]?.selectedFile} />
+        <div className="blog-desc">{allData[i]?.content}</div>
         </div>
         
 
@@ -104,9 +143,8 @@ class Blog extends Component {
           </div>
         </div>
       </div>
-            </div>
+            </div>)
         );
     }
-}
 
 export default Blog;

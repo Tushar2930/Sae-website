@@ -200,3 +200,7 @@ h1{
     text-decoration: underline;
     font-size: 20px;
 }
+
+.loader{
+    margin-top: 15rem;
+}
